@@ -75,7 +75,7 @@ h1{
    font-weight: 500;
    color: white;
    padding:1rem;
-   text-align: left;
+   text-align: left; 
 }
 
 nav {
@@ -132,7 +132,7 @@ h3{
     width:25%;
     height:3rem;
     margin-top: 10%;
-}
+} 
 
 #myProjects{
       background-color:lightslategrey;
@@ -160,32 +160,67 @@ text-align:start;
 width:90%;
 }
 
-.photos{
+
+.myphotos {
    display:flex;
    flex-flow: wrap;
-   justify-content: space-evenly;
+   margin-left:0rem;
+   justify-content:space-evenly;
+  }
+
+.myphotos img{
+   width: 18rem;
+   height:18rem;
 }
-.photos img{
-   width: 20rem;
-   height:20rem;
-   padding:2%;
-}
+
+.topic{
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding:0.2rem;
+   }
 
 footer{
    /*background-color:lightblue*/
  /* background: linear-gradient(0deg, rgba(117,212,213,1) 0%, rgba(213,202,178,1) 100%);*/
  background: linear-gradient(90deg, rgba(19,17,64,1) 0%, rgba(44,240,142,1) 35%, rgba(125,198,213,1) 100%);
+margin-top: 4rem;
 }
 
 footer h4{
    text-align: center;
    padding-top: 3%;
-   padding-bottom: 2%; 
+   padding-bottom: 1%; 
    font-size:2rem;
    line-height: 0.2rem;
    font-style: italic;
+      /* My animation */
+  animation-name:myanim;
+  animation-duration:3s;
+  animation-timing-function:ease-in-out;
+  animation-delay:2s; /*wait before start of animation */
+  animation-iteration-count:infinite; /* name,duration, timing function,delay,count */
 }
-
+/* keyframes rule to specify animation code */
+@keyframes myanim{
+  0%{
+  color:  grey;
+  transform: skewY(0.5deg);}
+  40%{ 
+  color:black;
+  transform: skewY(0.5deg);}  
+  70%,75%{
+   color:lightgray;
+   transform: skewY(2deg);
+  }
+   80%,90%,95%{
+    color: white;
+    transform: skewY(1deg);
+  }
+  100%{
+    color:black;
+    transform: skewY(0deg);
+  }
+}
 #contactme{
    background-color:lightslategrey;
    color:white;
