@@ -188,9 +188,10 @@ margin-top: 4rem;
 
 footer h4{
    text-align: center;
-   padding-top: 3%;
-   padding-bottom: 1%; 
-   font-size:2rem;
+   margin-bottom: 0.5rem;
+   padding-top: 2.5%;
+   padding-bottom: 1.5%; 
+   font-size:1.5rem;
    line-height: 0.2rem;
    font-style: italic;
       /* My animation */
@@ -306,5 +307,52 @@ footer h4{
    background-color: #5a32a3;
 }
 
-
+/* for media pixel mix of 600 px display column */
+@media (max-width:500px) {
+   nav ul {
+     margin-left:2%;
+     display:flex;
+     justify-content: center;
+      flex-flow: wrap;
+    /* flex-direction:column;*/
+    /* align-content: space-between;*/
+    /* justify-content: center;*/
+    /* align-items: fcenter;*/
+     }
+   ul li{
+    /*  padding:6%;
+      width:70%;
+      height:10%;*/
+      width: 40%;
+      padding:3%;
+   }
+   h1{
+      margin:0 auto;
+      text-align: center;
+   }
+   .myinfo{
+      margin-left:0%;
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction:column;
+      align-content: flex-start;
+      justify-content: center;
+      align-items: center;
+   }
+   .mainimg{
+      width:70%;
+      height:20%;
+   }
+  .mywords{
+   margin-left:0%;
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction:column;
+   align-content: flex-start;
+   justify-content: center;
+   align-items: center;
+}
+   }
+  
+  
 
