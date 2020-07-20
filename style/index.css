@@ -1,1 +1,358 @@
-/* Add CSS styling here */
+/* CSS RESET Begins */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+   /* border: 0.5px dotted grey; */
+    font-size: 62.5%;
+    font: inherit;
+    letter-spacing:1px;
+    vertical-align: baseline;
+    font-family:'Roboto Mono',serif;
+ }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.5;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS RESET section ENDS */
+
+/* every element is a border-box */
+* {
+  box-sizing: border-box;
+}
+
+/* start your css here */
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size:62.5%;
+  text-align:center;
+  max-width:100%;
+  margin:0 auto;
+}
+
+header{
+  /* background-color:lightblue;*/
+  /* background:linear-gradient(0deg, rgba(117,212,213,1) 0%, rgba(213,202,178,1) 100%);*/
+  background: linear-gradient(90deg, rgba(19,17,64,1) 0%, rgba(44,240,142,1) 35%, rgba(125,198,213,1) 100%);
+   height:50%;
+   padding-bottom:2%
+}
+h1{
+   font-size:2.5rem;
+   font-style: italic;
+   font-weight: 500;
+   color: white;
+   padding:1rem;
+   text-align: left; 
+}
+
+nav {
+   margin: 0% 0% 0% 3%;
+}
+
+ul {
+   list-style-type: none;
+   display: flex;
+   }
+
+li {
+   border: 1px solid white;
+   background-color: lightslategrey;
+   padding: 2% 3%;
+   font-size:1.2rem;
+   line-height: 0.2rem;
+}
+
+a:link, a:visited {
+   color:whitesmoke;
+   text-decoration: none;
+}
+
+li:hover, a:hover {
+   background-color: white;
+   color:slategrey;
+ }
+
+.myinfo{
+display:flex;
+margin:0 auto;
+}
+
+.mywords{
+   display:flex;
+   flex-direction: column;
+   padding-top: 5%;
+   padding-left: 5%;
+ }
+
+.mainimg{
+width: 275rem;
+height:37rem;
+padding:1%;
+margin-top:1.5rem;
+object-fit:fill;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    width:25%;
+    height:3rem;
+    margin-top: 10%;
+} 
+
+#myProjects{
+      background-color:lightslategrey;
+      border: 1px solid white;
+      color:white;
+      font-style:italic;
+      padding: 4% 3%; 
+      font-size:1.2rem;
+      line-height: 0.2rem;
+      width: 10rem;
+      margin-top:5%; 
+      margin-bottom: 2rem; 
+      transition: 0.5s;
+}
+ 
+#myProjects:hover {
+   background-color: lightblue;
+   color:slategrey
+}
+
+.desc{
+font-size: 1.5rem;
+font-style: oblique;
+text-align:start;
+width:90%;
+}
+
+
+.myphotos {
+   display:flex;
+   flex-flow: wrap;
+   margin-left:0rem;
+   justify-content:space-evenly;
+  }
+
+.myphotos img{
+   width: 18rem;
+   height:18rem;
+}
+
+.topic{
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding:0.2rem;
+   }
+
+footer{
+   /*background-color:lightblue*/
+ /* background: linear-gradient(0deg, rgba(117,212,213,1) 0%, rgba(213,202,178,1) 100%);*/
+ background: linear-gradient(90deg, rgba(19,17,64,1) 0%, rgba(44,240,142,1) 35%, rgba(125,198,213,1) 100%);
+margin-top: 4rem;
+}
+
+footer h4{
+   text-align: center;
+   margin-bottom: 0.5rem;
+   padding-top: 2.5%;
+   padding-bottom: 1.5%; 
+   font-size:1.5rem;
+   line-height: 0.2rem;
+   font-style: italic;
+      /* My animation */
+  animation-name:myanim;
+  animation-duration:3s;
+  animation-timing-function:ease-in-out;
+  animation-delay:2s; /*wait before start of animation */
+  animation-iteration-count:infinite; /* name,duration, timing function,delay,count */
+}
+/* keyframes rule to specify animation code */
+@keyframes myanim{
+  0%{
+  color:  grey;
+  transform: skewY(0.5deg);}
+  40%{ 
+  color:black;
+  transform: skewY(0.5deg);}  
+  70%,75%{
+   color:lightgray;
+   transform: skewY(2deg);
+  }
+   80%,90%,95%{
+    color: white;
+    transform: skewY(1deg);
+  }
+  100%{
+    color:black;
+    transform: skewY(0deg);
+  }
+}
+#contactme{
+   background-color:lightslategrey;
+   color:white;
+   font-style:italic;
+   padding: 2% 1%; 
+   font-size:1.2rem;
+   line-height: 0.2rem;
+   width: 10rem;
+   margin-top:5%; 
+   margin-bottom: 2rem; 
+   transition: 0.5s;
+}
+ 
+#contactme:hover {
+   background-color:lightblue;
+   color:slategrey;
+}
+
+/* social icons in footer */
+.footersocialicons a{
+   text-decoration: none;
+   color: #fff;
+}
+
+.footersocialicons ul {
+   padding:0;
+   list-style: none;
+   display:flex;
+   justify-content: space-evenly;
+   }
+
+.socialicons{
+   margin:0% 0% 0% 4%;
+}
+ 
+.socialicons li {
+  /* border: 1px solid white;*/
+  /* background-color:lightblue;*/
+   background: linear-gradient(90deg, rgba(19,17,64,1) 0%, rgba(44,240,142,1) 35%, rgba(125,198,213,1) 100%);
+   padding: 0.5% 0.5%;
+   font-size:1.2rem;
+   /*line-height: 0.2rem;*/
+      }
+.fa-facebook {
+   padding:1rem 1.4rem;
+   transition: .3s;
+   background-color:grey;
+}
+.fa-facebook:hover {
+   background-color: #3d5b99;
+}
+.fa-twitter {
+   padding:1rem 1.4rem;
+   transition: .3s;
+   background-color: grey;
+}
+.fa-twitter:hover {
+   background-color: #00aced;
+}
+ 
+.fa-youtube {
+   padding:1rem 1.4rem;
+   transition: .3s;
+   background-color: grey
+}
+.fa-youtube:hover {
+   background-color: #e64a41;
+}
+.fa-linkedin {
+   padding:1rem 1.4rem;
+   transition: .3s;
+   background-color: grey;
+}
+.fa-linkedin:hover {
+   background-color: #0073a4;
+}
+.fa-github {
+   padding:1rem 1.4rem;
+   transition: .3s;
+    background-color: grey
+}
+.fa-github:hover {
+   background-color: #5a32a3;
+}
+
+/* for media pixel mix of 600 px display column */
+@media (max-width:500px) {
+   nav ul {
+     margin-left:2%;
+     display:flex;
+     justify-content: center;
+      flex-flow: wrap;
+    /* flex-direction:column;*/
+    /* align-content: space-between;*/
+    /* justify-content: center;*/
+    /* align-items: fcenter;*/
+     }
+   ul li{
+    /*  padding:6%;
+      width:70%;
+      height:10%;*/
+      width: 40%;
+      padding:3%;
+   }
+   h1{
+      margin:0 auto;
+      text-align: center;
+   }
+   .myinfo{
+      margin-left:0%;
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction:column;
+      align-content: flex-start;
+      justify-content: center;
+      align-items: center;
+   }
+   .mainimg{
+      width:70%;
+      height:20%;
+   }
+  .mywords{
+   margin-left:0%;
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction:column;
+   align-content: flex-start;
+   justify-content: center;
+   align-items: center;
+}
+   }
+  
+  
+
